@@ -17,7 +17,7 @@ DUMMYFILENAME=xdummy.xml
 
 LISTS=(
 "http://link.to.list.1" 
-"https://link.to.list.2.xml.gz" # 2 Kevev's Pluto EPG
+"https://link.to.list.2.xml.gz"
 "http://link.to.list.3.gz"
 )
 
