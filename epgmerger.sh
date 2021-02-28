@@ -81,8 +81,7 @@ fixall () {
 }
 
 
-indexof() { i=0; while [ "$i" -lt "${#list[@]}" ] && [ "${list[$i]}" != "$1" ]; do ((i++)); done; echo $i; }
-	
+
 downloadepgs () {
 	INDEX=1
 	for list in ${LISTS[*]}; do
