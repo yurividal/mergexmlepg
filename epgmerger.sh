@@ -67,16 +67,8 @@ fixall () {
 		sed -i "s/lang=\"\"/lang=\"pt-BR\"/g" $xml
 		## Language Fixes (Might Not be Necessary)
 		sed -i "s/<display-name>/<display-name lang=\"pt-BR\">/g" $xml
-		# sed -i "s/lang=\"it\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"de\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"es\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"en\"/lang=\"pt-BR\"/g" $xml
 		sed -i "s/lang=\"pt\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"fr\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"fr-FR\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"en-GB\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"es-ES\"/lang=\"pt-BR\"/g" $xml
-		# sed -i "s/lang=\"en, es\"/lang=\"pt-BR\"/g" $xml
+
 	done	
 }
 
