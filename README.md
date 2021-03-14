@@ -14,5 +14,5 @@ sudo apt install xmltv
 * Execute the script (manually or as a cron, to automate it).
 * Output file will be called "merged.xmltv"
 * xml lists further down on the list will replace any previous ones in case of overlaping programmes. So, the most complete (or reliable) list should always be on the bottom of the list.
-* If you dont want to generate a dummy, simple comment out line 144.
+* If you dont want to generate a dummy, simply comment out line 135
 * For a better understanding of the dummy epg, see [this repo](https://github.com/yurividal/dummyepgxml).
