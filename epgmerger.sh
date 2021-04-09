@@ -80,8 +80,15 @@ downloadepgs () {
 		sleep 1
 		dir="$(TMPDIR=$PWD mktemp -d)" ## makes a temp dir so that we can download the file, rename it and keep it's extention.
 		wget -q --show-progress -P $dir --content-disposition --trust-server-names ${list[*]}
+		regex="\?"
 		for file in $dir/*; do
-			ext=${file##*.}
+			if [[ $file =~ $regex ]]; 
+				then
+					ext="xml"
+				else
+					echo "Not!"
+					ext=${file##*.}
+			fi
 			echo  "Extention = " $ext " Will rename it to " $BASEPATH/$INDEX.$ext
 			mv $file $BASEPATH/$INDEX.$ext
 		done
